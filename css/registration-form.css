@@ -1,0 +1,87 @@
+/*
+Registration form stylesheet
+*/
+
+* {
+  border-radius: 0 !important;
+}
+
+body {
+    color: #ffffff;
+    background-color: #12be9c;
+}
+
+
+
+/* Registration Card */
+.card {
+    margin-top: 3rem;
+    background: #263238;
+    border: none;
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+}
+
+    .card-title {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+
+
+/* Registration form controls */    
+.form-control {
+    border: none;
+    padding: 0.75rem 0.75rem;
+    -webkit-transition: background-color 0.3s ease-in-out;
+    -moz-transition: background-color 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
+}
+    .form-control:focus {
+        background-color: #e2e2e2;
+    }
+
+.form-group--password {
+    margin-bottom: 1rem;
+}
+
+
+
+/* Password strength bar and result styles */
+.form__progress--password-strength {
+    margin-top: 0.25rem
+}
+
+.form__progress--password-strength .progress {
+    background-color: #ffffff;
+}
+
+.form__progress--password-strength .progress-bar {
+    height: 0.25rem;
+}
+
+.form__message--password-verdict {
+    margin: 0 0.25rem 0 0;
+    font-size: 0.9rem;
+    display: inline-block;
+}
+
+
+/* Registration form button */
+.form-group__btn--register {
+    margin-bottom: 0;
+}
+
+.btn--register {
+    background-color: #12be9c;
+    width: 100%;
+    color: #ffffff;
+    margin-top: 0.5rem;
+    cursor: pointer;
+    padding: 0.75rem 0.75rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
