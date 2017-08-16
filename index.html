@@ -1,9 +1,6 @@
 
 <!DOCTYPE html>
 <html>
-<head>
-    <!DOCTYPE html>
-<html>
   <head>
     <meta charset="UTF-8">
     <title>Registration Form</title>
@@ -19,19 +16,24 @@
                     <div class="card-body">
                         <h4 class="card-title">Registration</h4>
                         <form role="form">
-                            <div class="form-row" id="container--registration">
+                           <div class="form-row" id="container--registration">
                                 <div class="form-group col-md-12">
+                                    <label for="inputUsername" class="col-form-label">Username</label>
                                     <input type="text" class="form-control" id="inputUsername" placeholder="Username">
                                 </div>
-                                <div class="form-group col-md-12 form-group--password">
+                                <div class="form-group col-md-12">
+                                    <label for="password" class="col-form-label">Password</label>
                                     <input type="password" class="form-control" id="password" placeholder="Password">
-                                    <div id="passwordStrength" class="form__progress--password-strength"></div>
-                                    <span class="form__message--password-verdict">Strength: </span><span class="form__message--password-verdict" id="passwordVerdict"></span>
                                 </div>
                                 <div class="form-group col-md-12">
+                                    <label for="passwordStrength" class="col-form-label">Password Strength</label>
+                                    <div id="passwordStrength" class="form__progress--password-strength"></div>
+                                </div>
+                                <div class="form-group col-md-12">
+                                    <label for="confirmPassword" class="col-form-label">Confirm Password</label>
                                     <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm Password">
                                 </div>
-                                <div class="form-group col-md-12 form-group__btn--register">
+                                <div class="form-group col-md-12">
                                     <button type="submit" class="btn btn--register">Register</button>
                                 </div>
                             </div>
@@ -57,10 +59,11 @@
                 container: "#container--registration",
                 viewports: {
                     progress: "#passwordStrength",
-                    verdict: "#passwordVerdict"
-                }
+                },
+                showVerdictsInsideProgressBar: true
             };
             $('#password').pwstrength(options);
         });
     </script>
 </footer>
+</html>
